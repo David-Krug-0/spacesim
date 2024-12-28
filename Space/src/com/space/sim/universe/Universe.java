@@ -9,7 +9,7 @@ import com.space.sim.gui.ColorInfo;
  * instances are moved around in a realistic way.
  * 
  * @author God
- * @version August 25, 2024
+ * @version December 28, 2024
  * @param <V> The type of vector the planet instances use
  */
 public abstract class Universe<V extends Vector<V>> {

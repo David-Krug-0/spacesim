@@ -5,13 +5,10 @@ import com.space.sim.universe._3d.Line3D;
 import com.space.sim.universe._3d.Vector3;
 
 /**
- * A class that aids in viewing three-dimensional objects.  The
- * main way this is done is by creating a plane, and then projecting
- * a 3D object onto that plane.  The projection is then what is drawn
- * on the screen.
+ * An implementation of {@link Camera} that projects 3D objects into 2D.
  * 
  * @author David Krug
- * @version August 19, 2023
+ * @version December 28, 2024
  */
 public class Camera3D extends Camera<Vector3, Vector2> {
 	

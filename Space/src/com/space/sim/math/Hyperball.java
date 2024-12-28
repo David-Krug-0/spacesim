@@ -8,12 +8,12 @@ import com.space.sim.universe.Vector;
 /**
  * A hyperball is a filled-in sphere of n dimensions.
  * <p>
- * For example, a hyperball in two dimensions ({@code Hyperball<Vector2>}) is
- * a filled-in circle, and a hyperball in three dimensions
+ * For example, a hyperball in two dimensions ({@code Hyperball<Vector2>}
+ * is a filled-in circle, and a hyperball in three dimensions
  * ({@code Hyperball<Vector3>}) is a filled-in sphere.
  * 
  * @author David Krug
- * @version August 25, 2024
+ * @version December 28, 2024
  * @param <V> he type of vector used for the center of the hyperball
  */
 public class Hyperball<V extends Vector<V>> {

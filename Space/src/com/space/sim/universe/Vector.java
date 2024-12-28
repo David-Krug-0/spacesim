@@ -6,7 +6,7 @@ package com.space.sim.universe;
  * something with magnitude and direction, like a force.
  * 
  * @author David Krug
- * @version August 23, 2023
+ * @version December 28, 2024
  * @param <V> The type of vector the implementation can perform 
  * operations on.  It should be the implemented vector itself.
  */
@@ -26,7 +26,8 @@ public interface Vector<V extends Vector<V>> {
 	void setToZero();
 	
 	/**
-	 * Sets the length of this vector to one while maintaining its original direction.
+	 * Sets the length of this vector to one
+	 * while maintaining its original direction.
 	 */
 	default void normalize() {
 		multiplyLength(1 / length());
@@ -35,16 +36,16 @@ public interface Vector<V extends Vector<V>> {
 	
 	
 	/**
-	 * For each component of the given vector, its value is added to the 
-	 * corresponding component of this vector.
+	 * For each component of the given vector, its value is
+	 * added to the corresponding component of this vector.
 	 * 
 	 * @param v	The given vector
 	 */
 	void add(V v);
 	
 	/**
-	 * For each component of the given vector, its value is subtracted to
-	 * the corresponding component of this vector.
+	 * For each component of the given vector, its value is
+	 * subtracted to the corresponding component of this vector.
 	 * 
 	 * @param v	The given vector
 	 */
@@ -52,8 +53,8 @@ public interface Vector<V extends Vector<V>> {
 	
 	
 	/**
-	 * Creates a copy of this vector, applies {@link #add(Vector)} to the
-	 * copy, and then returns the copy.
+	 * Creates a copy of this vector, applies {@link #add(Vector)}
+	 * to the copy, and then returns the copy.
 	 * 
 	 * @param v	The vector that will be added to the copy
 	 * @return	A copy of this vector added with the given vector
@@ -65,8 +66,8 @@ public interface Vector<V extends Vector<V>> {
 	}
 	
 	/**
-	 * Creates a copy of this vector, applies {@link #minus(Vector)} to the
-	 * copy, and then returns the copy.
+	 * Creates a copy of this vector, applies {@link #minus(Vector)}
+	 * to the copy, and then returns the copy.
 	 * 
 	 * @param v	The vector that will be subtracted from the copy
 	 * @return	A copy of this vector subtracted with the given vector
@@ -111,7 +112,8 @@ public interface Vector<V extends Vector<V>> {
 	void addMultiplied(V v, double num);
 	
 	/**
-	 * Creates a copy of this vector, applies {@link #addMultiplied(Vector, double)}
+	 * Creates a copy of this vector, applies
+	 * {@link #addMultiplied(Vector, double)}
 	 * to the copy, and then returns the copy.
 	 * 
 	 * @param v		The vector that will be scaled and added to the copy
@@ -127,11 +129,9 @@ public interface Vector<V extends Vector<V>> {
 	
 	
 	/**
-	 * Returns the Euclidian length (a fancy way of saying we are
-	 * assuming that this vector isn't curved) of this vector.
-	 * This is the same as assuming that the vector is being used
-	 * to represent a position, and finding the distance between the
-	 * position and the origin.
+	 * Returns the length of this vector. This is the same as assuming
+	 * that the vector is being used to represent a position, and finding
+	 * the distance between the position and the origin.
 	 * 
 	 * @return	The length of this vector
 	 */
@@ -155,8 +155,8 @@ public interface Vector<V extends Vector<V>> {
 	
 	/**
 	 * This method assumes that this vector and the given vector are
-	 * representing positions, and returns the Euclidian distance 
-	 * (shortest distance on a flat surface) between these two positions.
+	 * representing positions, and returns the distance between these
+	 * two positions.
 	 * 
 	 * @param v	The given vector
 	 * @return	The distance between this and the given vector
@@ -185,8 +185,8 @@ public interface Vector<V extends Vector<V>> {
 	 * products between the corresponding components.
 	 * <p>
 	 * Geometrically, the dot product is the result of multiplying the lengths
-	 * of both vectors, and then multiplying the result by the the cosine of the
-	 * angle between the two vectors.
+	 * of both vectors, and then multiplying the result by the the cosine of
+	 * the angle between the two vectors.
 	 * 
 	 * @param v	The given vector
 	 * @return	The dot product between this vector and the given vector

@@ -9,7 +9,7 @@ import com.space.sim.universe.Universe;
  * The two-dimensional implementation of the {@link Universe} class.
  * 
  * @author David Krug
- * @version October 26, 2023
+ * @version December 28, 2024
  */
 public class Universe2D extends Universe<Vector2> {
 	

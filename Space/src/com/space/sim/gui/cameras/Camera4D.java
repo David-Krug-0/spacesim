@@ -4,11 +4,10 @@ import com.space.sim.universe._3d.Vector3;
 import com.space.sim.universe._4d.Vector4;
 
 /**
- * An implementation of {@link Camera} that
- * projects 4D objects into 3D.
+ * An implementation of {@link Camera} that projects 4D objects into 3D.
  * 
  * @author David Krug
- * @version August 14, 2024
+ * @version December 28, 2024
  */
 public class Camera4D extends Camera<Vector4, Vector3> {
 	

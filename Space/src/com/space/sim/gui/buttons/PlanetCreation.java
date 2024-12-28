@@ -8,13 +8,12 @@ import javax.swing.JButton;
 import com.space.sim.gui.dialogbox.PlanetDialog;
 
 /**
- * This class is an implementation of {@link MenuTopic}.
- * It has a submenu focused on the creation of planets.
- * Most of the buttons consist of loading in predefined
- * planet arrangements.
+ * This class is an implementation of {@link MenuTopic}.  It has a
+ * submenu focused on the creation of planets.  Most of the buttons
+ * consist of loading in predefined planet arrangements.
  * 
  * @author David Krug
- * @version June 2, 2023
+ * @version December 28, 2024
  */
 @SuppressWarnings("serial")
 public class PlanetCreation extends MenuTopic {

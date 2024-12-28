@@ -10,7 +10,7 @@ import com.space.sim.math.Hyperball;
  * sphere which moves according to Newton's law of gravitation.
  * 
  * @author David Krug
- * @version August 25, 2024
+ * @version December 28, 2024
  * @param <V> The type of vector used for position, velocity, and acceleration
  */
 public abstract class Planet<V extends Vector<V>> extends Hyperball<V> {
@@ -42,7 +42,8 @@ public abstract class Planet<V extends Vector<V>> extends Hyperball<V> {
 	 * @param colorInfo	The color of the planet
 	 */
 	protected Planet(V coords, double mass, ColorInfo colorInfo) {
-		super(coords, Double.NaN, colorInfo);	//Setting the radius to NaN since we change it immediately
+		//Setting the radius to NaN since we change it immediately
+		super(coords, Double.NaN, colorInfo);
 		
 		this.coords = coords;
 		newCoords = coords.copy();
