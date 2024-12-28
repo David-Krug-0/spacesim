@@ -5,10 +5,11 @@ import javax.swing.JOptionPane;
 import com.space.sim.math.MathUtils;
 
 /**
- * This class creates pop-ups that ask the user to input a number.
+ * This class creates pop-ups that
+ * ask the user to input a number.
  * 
  * @author David Krug
- * @version December 28, 2024
+ * @version February 24, 2023
  */
 public final class NumAskDialog {
 

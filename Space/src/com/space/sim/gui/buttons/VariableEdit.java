@@ -7,11 +7,12 @@ import com.space.sim.gui.dialogbox.NumAskDialog;
 import com.space.sim.universe.Planet;
 
 /**
- * This class is an implementation of {@link MenuTopic}.  It has
- * a submenu focused on altering the values of various variables.
+ * This class is an implementation of {@link MenuTopic}.
+ * It has a submenu focused on altering the values of
+ * various variables.
  * 
  * @author David Krug
- * @version December 28, 2024
+ * @version June 2, 2023
  */
 @SuppressWarnings("serial")
 public class VariableEdit extends MenuTopic {

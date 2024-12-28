@@ -10,11 +10,12 @@ import com.space.sim.universe.Planet;
 import com.space.sim.universe.Universe.IntegrationMethod;
 
 /**
- * This class is an implementation of {@link MenuTopic}.  It has a submenu
- * focused on changing the current integration method the simulation is using.
+ * This class is an implementation of {@link MenuTopic}.
+ * It has a submenu focused on changing the current
+ * integration method the simulation is using.
  * 
  * @author David Krug
- * @version December 28, 2024
+ * @version September 18, 2023
  */
 @SuppressWarnings("serial")
 public class IntegrationMethods extends MenuTopic {

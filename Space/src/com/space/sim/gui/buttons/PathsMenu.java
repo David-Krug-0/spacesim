@@ -6,11 +6,12 @@ import java.awt.event.ActionListener;
 import com.space.sim.gui.Painter;
 
 /**
- * This class is an implementation of {@link MenuTopic}.  It has a
- * submenu focused on controlling the appearance of planet paths.
+ * This class is an implementation of {@link MenuTopic}.
+ * It has a submenu focused on controlling the appearance
+ * of planet paths.
  * 
  * @author David Krug
- * @version December 28, 2024
+ * @version August 14, 2024
  */
 @SuppressWarnings("serial")
 public class PathsMenu extends MenuTopic {
