@@ -9,7 +9,7 @@ import com.space.sim.universe.Universe;
  * The two-dimensional implementation of the {@link Universe} class.
  * 
  * @author David Krug
- * @version October 26, 2023
+ * @version December 28, 2024
  */
 public class Universe2D extends Universe<Vector2> {
 	
@@ -122,14 +122,12 @@ public class Universe2D extends Universe<Vector2> {
             case 7:
                 // Dust
             	Random rand = new Random();
-            	long seed = //System.nanoTime();
-            			98425323328200l;
+            	long seed = 98425323328200l;
             	System.out.println("Start Seed: " + seed);
             	rand.setSeed(seed);
             	
             	Random colRand = new Random();
-            	long colSeed = //System.nanoTime();
-            			98425323550500l;
+            	long colSeed = 98425323550500l;
             	System.out.println("Color Seed: " + colSeed);
             	colRand.setSeed(colSeed);
             	
