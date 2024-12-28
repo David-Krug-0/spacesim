@@ -122,14 +122,12 @@ public class Universe2D extends Universe<Vector2> {
             case 7:
                 // Dust
             	Random rand = new Random();
-            	long seed = //System.nanoTime();
-            			98425323328200l;
+            	long seed = System.nanoTime();
             	System.out.println("Start Seed: " + seed);
             	rand.setSeed(seed);
             	
             	Random colRand = new Random();
-            	long colSeed = //System.nanoTime();
-            			98425323550500l;
+            	long colSeed = System.nanoTime();
             	System.out.println("Color Seed: " + colSeed);
             	colRand.setSeed(colSeed);
             	
