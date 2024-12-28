@@ -21,7 +21,7 @@ import com.space.sim.universe._2d.Vector2;
  * the {@code Universe} it holds.
  * 
  * @author David Krug
- * @version August 25, 2024
+ * @version December 28, 2024
  * @param <V> The type of vector the {@code universe} instance uses
  */
 @SuppressWarnings("serial")
@@ -205,9 +205,8 @@ public abstract class Painter<V extends Vector<V>> extends JPanel {
     
     
     /**
-     * Calls the {@link com.space.sim.universe._2d.ThrowUPaths2D#clearPaths
-     * ThrowUPaths2D.clearPaths()} method of the {@code Universe}
-     * in this {@code Painter}.
+     * Calls the {@link com.space.sim.universe.Paths#clearPaths Paths.clearPaths()}
+     * method of the {@code Universe} in this {@code Painter}.
      */
     public void clearPaths() {
     	universe.getPaths().clearPaths();

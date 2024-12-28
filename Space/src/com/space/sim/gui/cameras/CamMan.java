@@ -17,13 +17,13 @@ import com.space.sim.universe.Vector;
  * Afterwards, to add any balls and lines that need to be drawn,
  * {@link CamMan#addBalls(List) addBalls(List)} and
  * {@link CamMan#addLines(List) addLines(List)} should be called respectively.
- * FInally, {@link CamMan#makeDrawingList() makeDrawingList()} will provide an
+ * Finally, {@link CamMan#makeDrawingList() makeDrawingList()} will provide an
  * {@code ArrayList} of projections of the balls and lines such that objects in
  * the beginning of the {@code ArrayList} should be drawn behind objects later
  * in the {@code ArrayList}.
  * 
  * @author David Krug
- * @version August 25, 2024
+ * @version December 28, 2024
  * @param <V> The type of vectors that the camera will see
  */
 abstract class CamMan<V extends Vector<V>> {
