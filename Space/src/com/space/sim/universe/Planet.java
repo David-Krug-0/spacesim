@@ -4,13 +4,14 @@ import java.util.ArrayList;
 
 import com.space.sim.gui.ColorInfo;
 import com.space.sim.math.Hyperball;
+import com.space.sim.math.MathUtils;
 
 /**
  * This class represents a planet.  The planet is a perfect and rigid
  * sphere which moves according to Newton's law of gravitation.
  * 
  * @author David Krug
- * @version December 28, 2024
+ * @version January 6, 2025
  * @param <V> The type of vector used for position, velocity, and acceleration
  */
 public abstract class Planet<V extends Vector<V>> extends Hyperball<V> {
@@ -200,7 +201,7 @@ public abstract class Planet<V extends Vector<V>> extends Hyperball<V> {
     	newAccel.setToZero();
     	
     	for (Planet<V> otherPlanet: planets) {
-    		if (otherPlanet == this || otherPlanet.mass == 0) {
+    		if (otherPlanet == this || MathUtils.nearlyZero(otherPlanet.mass) {
     			continue;
     		}
     		
