@@ -14,7 +14,7 @@ import com.space.sim.universe.Vector;
  * 
  * @author David Krug
  * @version December 28, 2024
- * @param <V> he type of vector used for the center of the hyperball
+ * @param <V> The type of vector used for the center of the hyperball
  */
 public class Hyperball<V extends Vector<V>> {
 
