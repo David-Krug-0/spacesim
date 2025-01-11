@@ -201,7 +201,7 @@ public abstract class Planet<V extends Vector<V>> extends Hyperball<V> {
     	newAccel.setToZero();
     	
     	for (Planet<V> otherPlanet: planets) {
-    		if (otherPlanet == this || MathUtils.nearlyZero(otherPlanet.mass) {
+    		if (otherPlanet == this || MathUtils.nearlyZero(otherPlanet.mass)) {
     			continue;
     		}
     		
